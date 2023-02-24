@@ -34,19 +34,19 @@ module.exports = (app) => {
   // Recuperar todas las habitaciones
   router.get("/habitaciones", habitaciones.findAll);
 
-  // Recuperar todas las Reservas
-  router.get("/habitaciones", habitaciones.findAllReservas);
+  // Recuperar todas las Habitaciones
+  router.get("/habitaciones", habitaciones.findAllHabitaciones);
 
-  // Recuperar una sola persona con id
+  // Recuperar una sola habitacion con id
   router.get("/habitaciones/:id", habitaciones.findOne);
 
-  // Actualizar una persona con id
+  // Actualizar una habitacion con id
   router.put("/habitaciones/:id", habitaciones.update);
 
-  // Eliminar una persona con id
+  // Eliminar una habitacion con id
   router.delete("/habitaciones/:id", habitaciones.delete);
 
-  // Eliminar todas las Personas
+  // Eliminar todas las Habitaciones
   router.delete("/habitaciones", habitaciones.deleteAll);
 
   //----------------------------------------------------------------//
@@ -57,16 +57,16 @@ module.exports = (app) => {
   // Recuperar todas las reservas
   router.get("/reservas", reservas.findAll);
 
-  // Recuperar una sola persona con id
+  // Recuperar una sola reserva con id
   router.get("/reservas/:id", reservas.findOne);
 
-  // Actualizar una persona con id
+  // Actualizar una reserva con id
   router.put("/reservas/:id", reservas.update);
 
-  // Eliminar una persona con id
+  // Eliminar una reserva con id
   router.delete("/reservas/:id", reservas.delete);
 
-  // Eliminar todas las Personas
+  // Eliminar todas las reservas
   router.delete("/reservas", reservas.deleteAll);
 
   app.use("/api/", router);

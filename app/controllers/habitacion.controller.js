@@ -61,8 +61,8 @@ exports.findOne = (req, res) => {
 };
 
 // Encuentra todas las habitaciones
-exports.findAllReservas = (req, res) => {
-  Habitacion.getAllReservas((err, data) => {
+exports.findAllHabitaciones = (req, res) => {
+  Habitacion.getAllHabitaciones((err, data) => {
     if (err)
       res.status(500).send({
         message:

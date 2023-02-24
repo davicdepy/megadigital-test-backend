@@ -59,7 +59,7 @@ Habitacion.getAll = (habitacionpiso, result) => {
   });
 };
 
-Habitacion.getAllReservas = (result) => {
+Habitacion.getAllHabitaciones = (result) => {
   sql.query(
     "SELECT * FROM table_habitacion WHERE reservas=true",
     (err, res) => {
