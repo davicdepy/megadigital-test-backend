@@ -10,7 +10,7 @@ CREATE TABLE `table_habitacion` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la table `table_persona`
+-- Estructura de tabla para la tabla `table_persona`
 --
 
 CREATE TABLE `table_persona` (
