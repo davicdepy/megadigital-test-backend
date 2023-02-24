@@ -15,4 +15,4 @@ BACKEND
 ## MySQL
 - `install mysql or mariadb connector` *([connector](https://mariadb.com/kb/es/acerca-de-mariadb-connectorj/))*
 - `mysql --host 127.0.0.1 -P 3306 -u root -p`
-- `ejecutar instancias --> mysql.sql`
+- `ejecutar sentencias --> mysql.sql`
